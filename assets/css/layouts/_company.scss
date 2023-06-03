@@ -1,0 +1,20 @@
+.commpany{
+    background: #F5F5F5;
+    .sigle-commpany{
+        padding-bottom:25px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+        transition: .5s;
+            img{
+                width: 200px;
+                border-radius: 50%;
+            }
+        &:hover{
+            transform: translateY(-20px);
+        }
+
+        
+        
+    }
+}

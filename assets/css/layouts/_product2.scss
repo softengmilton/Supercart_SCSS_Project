@@ -1,0 +1,94 @@
+
+.product2{
+    .single-product{
+        @include small{
+            text-align: center;
+        }
+
+
+
+            background-color: #FFFFFF;
+            .img-area{
+                position: relative;
+                img{
+                    width: 220px;
+                }
+                h4{
+                    position: absolute;
+                    width: 80px;
+                    background-color: #D7FFD2;
+                    top: 0;
+                    left: 0;
+                    padding: 0 5px;
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    color: rgb(53, 244, 57);
+                    border-radius:2px;
+                }
+                h5{
+                    position: absolute;
+                    width: 45px;
+                    color: #D7FFD2;
+                    top: 33px;
+                    left: 0;
+                    padding: 0 5px;
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    background-color: red;
+                    border-radius: 2px;
+                }
+
+            }
+
+
+            .product-content{
+
+            .product-star{
+                
+                li{
+                    display: inline-block;
+                    font-size: 15px;
+                }
+            }
+            h6{ 
+                text-transform: capitalize;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #333;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .product-price{
+                    margin-bottom: 15px;
+                    li{
+                        display: inline; 
+                        font-size: 15px;
+
+                        &:nth-child(1){
+                            color: #E10600;
+                            font-weight: 600;
+                            padding-right: 10px;
+                        }
+                    }
+                    
+                }
+        } 
+        }
+
+        .product2-img{
+            @include small{
+            width: 326px;
+            margin-left: 20px;
+            }
+            @include medium{
+                margin: 0;
+                width: 100%;
+                padding-left:56px;
+            }
+            
+        }
+}
+
+
+    

@@ -1,0 +1,52 @@
+$sizes:(h1,40px,48px,700),
+       (h2,32px,40px,700),
+       (h3,28px,32px,600),
+       (h4,24px,28px,500),
+       (h5,20px,24px,500),
+       (h6,16px,24px,400);
+
+@each $name,$font-size,$line-height,$font-weight in $sizes{
+    #{$name}{
+        font-size: $font-size;
+        line-height: $line-height;
+        font-weight: $font-weight;
+    }
+}
+
+// text-align
+
+$text-aligns:center,right,left,justify;
+
+@each $text-align in $text-aligns{
+    .text-align-#{$text-align}{
+        text-align: $text-align;
+    }
+}
+
+
+// text-transform
+
+$text-transforms:uppercase,capitalize,lowercase;
+
+@each $text-transform in $text-transforms{
+    .text-transform-#{$text-transform}{
+        text-transform: $text-transform;
+    }
+}
+
+// font-weight
+
+$font-weights:100,200,300,400,500,600,700,800,900;
+@each $font-weight in $font-weights{
+    .fw-#{$font-weight}{
+        font-weight: $font-weight;
+    }
+}
+
+// font-size
+
+@for $i from 1 through 20{
+    .fs-#{$i*5}{
+        font-size: $i*5px;
+    }
+}

@@ -1,0 +1,88 @@
+.container{
+    width: 100%;
+    padding: 0 30px;
+    margin: auto;
+    scroll-behavior: smooth;
+
+    .row{
+        margin: 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+$grid-column:12;
+$col-xxl-breakpoint:1400px;
+$col-xl-breakpoint:1200px;
+$col-lg-breakpoint:1000px;
+$col-md-breakpoint:800px;
+$col-sm-breakpoint:576px;
+
+
+
+@media only screen and (max-width:$col-sm-breakpoint){
+    .container{
+        width: 350px;
+        scroll-behavior: smooth;
+    }
+    @for $i from 1 through $grid-column{
+        .col-sm-#{$i}{
+            width: (100/12)*$i*1%;
+            padding: 15px;
+        }
+    }
+}
+
+@media only screen and (min-width:$col-md-breakpoint){
+    .container{
+        width:750px;
+        scroll-behavior: smooth;
+    }
+    @for $i from 1 through $grid-column{
+        .col-md-#{$i}{
+            width:(100/12)*$i*1%;
+            padding: 15px;
+        }
+    }
+
+}
+@media only screen and (min-width:$col-lg-breakpoint){
+    .container{
+        width: 970px;
+        scroll-behavior: smooth;
+    }
+    @for $i from 1 through $grid-column{
+        .col-lg-#{$i}{
+            width:(100/12)*$i*1%;
+            padding: 15px;
+        }
+    }
+
+}
+@media only screen and (min-width:$col-xl-breakpoint){
+    .container{
+        width: 1170px;
+        scroll-behavior: smooth;
+    }
+    @for $i from 1 through $grid-column{
+        .col-xl-#{$i}{
+            width:(100/12)*$i*1%;
+            padding: 15px;
+        }
+    } 
+
+}
+@media only screen and (min-width:$col-xxl-breakpoint){
+    .container{
+        width: 1390px;
+        scroll-behavior: smooth;
+    }
+    @for $i from 1 through $grid-column{
+        .col-xxl-#{$i}{
+            width:(100/12)*$i*1%;
+            padding: 15px;
+        }
+    }
+
+}

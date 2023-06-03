@@ -1,0 +1,112 @@
+.footer-bottom{
+    width: 100%;
+    height:100%;
+    background-color: #fff;
+
+    .footer-bottom1{
+        h4{
+            font-size: 15px;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        p{
+            color: #333;
+            padding-bottom: 10px;
+        }
+        .footer-input{
+            input{
+                width: 65%;
+                padding: 12px 5px;
+                border-radius: 16px;
+                margin-top: 10px;
+            }
+            button{
+                width: 31%;
+                padding: 10px 0;
+                border-radius: 36px;
+                border: 0;
+                font-size: 20px;
+                text-transform: capitalize;
+                color: #fff;
+                background: #00A2F3;
+                font-weight: 500;
+                &:hover{
+                    background: #161880;
+                }
+            }
+        }
+    }
+    .footer-bottom2{
+        h4{
+            font-size: 15px;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        ul{
+           li {
+            color: #333;
+            padding: 0 0 2px 0px;
+            font-size: 15px;
+            text-transform: capitalize;
+            a{
+                transition: .5s;
+                &:hover{
+                    color: #1977F3;
+                    border-bottom: 1px solid #1977F3;
+                }
+            }
+          }
+        } 
+    }
+
+    .footer-bottom3{
+        h4{
+            font-size: 15px;
+            font-weight: 600;
+            padding-bottom: 20px;
+
+        }
+        ul{
+            li{
+                display: inline-block;
+                padding-left: 5px;
+                color: #3B589C;
+                &:nth-child(2){
+                    color: #00A2F3;
+                }
+                &:nth-child(3){
+                    color: #FF0000;
+                }
+                &:nth-child(4){
+                    color: #F0E100;
+                }
+                &:nth-child(5){
+                    color: #1977F3;
+                }
+                 i{
+                    font-size: 40px;
+                    
+                }
+                
+            }
+        }
+    }
+
+    .footer-last{
+        ul{
+            text-align: right;
+            li{
+                
+                display: inline-block;
+                padding-left: 5px;
+               
+                &:nth-child(6){
+                    margin-right: 45px;
+                }
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

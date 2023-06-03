@@ -1,0 +1,31 @@
+.categories{
+    background: #F5F5F5;
+    .sigle-categories{ 
+        text-align: center;       
+        padding-bottom:25px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+            img{
+                width: 200px;
+                border-radius: 50%;
+            }
+            h4{
+                font-size: 18px;
+                @include small{
+                    font-size: 15px;
+                }
+              a{
+                transition: .3s;
+                &:hover{
+                    border-bottom: 1px solid #333;
+                    
+                }
+            }
+  
+            }
+            
+        
+        
+    }
+}
